@@ -6,13 +6,30 @@ import NavBarButton from "./navBarButton"
 
 const links = ["About", "Services", "Contact"]
 
+const firstLetter = str => {
+  // Turn string into array to iterate over
+  let strArr = str.split(' ')
+  //create new array to populate
+  let newArr = []
+
+  strArr.forEach(word => {
+    // Create JSX Element NOT STRING to populate Array
+    // Make sure to use className not class since it's JSX not HTML
+    word = <><span className='firstLetter'>{word.slice(0,1)}</span>{word.slice(1)} </>
+
+    newArr.push(word)
+  })
+
+  return newArr
+}
+
 const Header = ({ siteTitle }) => (
   <header>
     <div id="headerInfo">
       <Link to='/'><img src={logo} id="headerLogo"/></Link>
       <div id="headerText">
-        <span id="titleText"><span class="firstLetter">N</span>orth <span class="firstLetter">G</span>eorgia <span class="firstLetter">S</span>ecurity <span class="firstLetter">C</span>onsultants</span>
-        <span id="slugText">Georgia’s Premier Residential and Commercial Security Experts</span>
+        <span id="titleText">{firstLetter(siteTitle)}</span>
+        <span className="slugText">Georgia’s Premier Residential and Commercial Security Experts</span>
       </div>
     </div>
     <nav>

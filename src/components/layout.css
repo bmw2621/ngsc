@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&display=swap');
 
-html, body, #___gatsby, #gatsby-focus-wrapper {
+html, body, #___gatsby, #gatsby-focus-wrapper, main {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'PT Serif'
 }
+
+main {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 header {
   width: 100%;
-  height: 30%;
+  height: 25%;
   padding: 0;
   margin: 0;
   min-height: 377px;
@@ -17,7 +26,6 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  /* background: #000; */
   background: linear-gradient(to right, #000, #000 60%, rgba(0,0,0,.5)), url("../images/chainlink.jpg") 500px 0px no-repeat;
 }
 
@@ -25,12 +33,17 @@ nav {
   margin:0;
   padding: 0;
   width: 100%;
-  height: 50px;
+  height: 15%;
   background-color: darkgray;
   display: flex;
   -ms-align-items: center;
   align-items: center;
   justify-content: center;
+}
+
+a, a:visited, a:active, a:hover {
+  outline: none;
+  text-decoration: none;
 }
 
 .navBarButton {
@@ -60,10 +73,12 @@ nav {
   font-size: 4rem;
 }
 
-#slugText{
+.slugText{
   color: gray;
   font-size: 2rem;
   font-style: italic;
+  text-align: center;
+  margin: 0px 50px 0px 50px;
 }
 
 #headerInfo {
@@ -87,8 +102,35 @@ nav {
   -ms-align-items: center;
   align-items: center;
   color: #fff;
+  text-align: center;
 }
 
 #headerText > * {
   margin: 0;
+}
+
+#crest {
+  height: 80%;
+}
+
+#mainContent, #aboutContent {
+  height: 70%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#bioName {
+  font-family: "PT Serif";
+  font-size: 2rem;
+  text-align: center;
+}
+
+#aboutText {
+  display: flex;
+  flex-direction: column;
 }
