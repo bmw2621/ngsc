@@ -17,8 +17,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  background: #000;
-  background-image: url("../images/chainlink.jpg"), linear-gradient(#000, rgba(0,0,0,0));
+  /* background: #000; */
+  background: linear-gradient(to right, #000, #000 60%, rgba(0,0,0,.5)), url("../images/chainlink.jpg") 500px 0px no-repeat;
 }
 
 nav {
