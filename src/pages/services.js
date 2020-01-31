@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "gatsby";
+
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ServiceCard1 from "../components/serviceCard1";
 import ServiceCard2 from "../components/serviceCard2";
 
-import cameraImage from "../images/camera.png"
+
 import camera2Image from "../images/camera2.png"
 import churchImage from "../images/church.png"
 import fenceImage from "../images/fence.png"
@@ -17,7 +17,7 @@ import meetingImage from "../images/meeting.png"
 import rangeImage from "../images/range.png"
 import reportImage from "../images/report.png"
 import stairsImage from "../images/stairs.png"
-import viewImage from "../images/view.png"
+
 
 const card1Data = [
   ["left","Assessments drive the security strategies contoured to specific security needs, ensuring client peace of mind in relation to personal safety and the security of their assets. ",mapImage],

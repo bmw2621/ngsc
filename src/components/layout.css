@@ -57,7 +57,7 @@ html, body, #___gatsby, #gatsby-focus-wrapper, main {
     text-decoration: none;
     color: black;
     font-family: "PT Sarif";
-    font-size: 2vw;
+    font-size: 1.5vw;
     background: #6699CC;
     border-left: 2px solid white;
     border-right: 2px solid white;
@@ -78,7 +78,7 @@ html, body, #___gatsby, #gatsby-focus-wrapper, main {
 
   .slugText{
     color: gray;
-    font-size: 2vw;
+    font-size: 1.75vw;
     font-style: italic;
     text-align: center;
     margin: 0px 50px 0px 50px;
@@ -132,14 +132,9 @@ html, body, #___gatsby, #gatsby-focus-wrapper, main {
     justify-content: center;
   }
 
-  #contactContent{
-    -ms-align-items: center;
-    align-items: center;
-  }
-
   #aboutContent, #contactContent {
     margin-top:20px;
-    align-items: flex-start;
+    align-items: center;
   }
 
   #bioName {
@@ -374,8 +369,8 @@ html, body, #___gatsby, #gatsby-focus-wrapper, main {
   }
 
   .servicesCard2Img {
-    height: 30vw;
-    width: 30vw;
+    height: 20vw;
+    width: 20vw;
     border-radius: 75px;
   }
 
