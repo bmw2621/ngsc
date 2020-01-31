@@ -10,8 +10,8 @@ import crest from "../images/crest.svg";
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
-    <div id="aboutContent" style={{"width": "75%"}}>
-      <img src={crest} style={{"marginTop":"20px", "height":"100%"}}></img>
+    <div id="contactContent" style={{"width": "75%"}}>
+      <img id="contactCrest" src={crest} style={{"marginTop":"20px", "height":"100%"}}></img>
       <div id="aboutText">
         <span id="bioName">William B. O'Neal</span>
         <span className="slugText">(470) 577-1270</span>

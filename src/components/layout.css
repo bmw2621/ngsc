@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&display=swap');
 
+
 html, body, #___gatsby, #gatsby-focus-wrapper, main {
   width: 100%;
   height: 100%;
@@ -8,162 +9,380 @@ html, body, #___gatsby, #gatsby-focus-wrapper, main {
   font-family: 'PT Serif'
 }
 
-main {
-  height: 75%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+@media only screen and (min-width: 785px) {
+
+  main {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  header {
+    width: 100%;
+    height: 25%;
+    padding: 0;
+    margin: 0;
+    min-height: 377px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(to right, #000, #000 60%, rgba(0,0,0,.5)), url("../images/chainlink.jpg") 500px 0px no-repeat;
+  }
+
+  nav {
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 15%;
+    background-color: darkgray;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a, a:visited, a:active, a:hover {
+    outline: none;
+    text-decoration: none;
+  }
+
+  .navBarButton {
+    height: 100%;
+    width: 20%;
+    min-width: 200px;
+    margin: -2px;
+    text-decoration: none;
+    color: black;
+    font-family: "PT Sarif";
+    font-size: 2vw;
+    background: #6699CC;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #titleText {
+    color: white;
+    font-size: 3vw;
+    text-transform: uppercase;
+  }
+
+  .firstLetter {
+    font-size: 3.5vw;
+  }
+
+  .slugText{
+    color: gray;
+    font-size: 2vw;
+    font-style: italic;
+    text-align: center;
+    margin: 0px 50px 0px 50px;
+  }
+
+  #headerInfo {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #headerLogo {
+    height: 20vw;
+    max-height: 200px;
+    margin-right: 100px;
+    text-align: center;
+  }
+
+  #headerText {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+
+  #headerText > * {
+    margin: 0;
+  }
+
+  #crest {
+    height: 80%;
+  }
+
+  #contactCrest {
+    width: 50vw;
+  }
+
+  #mainContent, #aboutContent, #contactContent {
+    height: 70%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contactContent{
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+  #aboutContent, #contactContent {
+    margin-top:20px;
+    align-items: flex-start;
+  }
+
+  #bioName {
+    font-family: "PT Serif";
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  #aboutText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card1 {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+  .card2 {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicesCard1Img {
+    height: 30vw;
+    max-height: 300px;
+  }
+
+  .servicesCard2Img {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+  }
+
+  #moreServices {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
-header {
-  width: 100%;
-  height: 25%;
-  padding: 0;
-  margin: 0;
-  min-height: 377px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  background: linear-gradient(to right, #000, #000 60%, rgba(0,0,0,.5)), url("../images/chainlink.jpg") 500px 0px no-repeat;
-}
+@media only screen and (max-width: 784px) {
 
-nav {
-  margin:0;
-  padding: 0;
-  width: 100%;
-  height: 15%;
-  background-color: darkgray;
-  display: flex;
-  -ms-align-items: center;
-  align-items: center;
-  justify-content: center;
-}
+  main {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-a, a:visited, a:active, a:hover {
-  outline: none;
-  text-decoration: none;
-}
+  header {
+    width: 100%;
+    padding: 0;
+    padding-top: 50px;
+    margin: 0;
+    min-height: 377px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: black;
+  }
 
-.navBarButton {
-  height: 100%;
-  width: 20%;
-  min-width: 200px;
-  margin: -2px;
-  text-decoration: none;
-  color: black;
-  font-family: "PT Sarif";
-  font-size: 1.5rem;
-  background: #6699CC;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  nav {
+    margin:0;
+    padding: 0;
+    width: 100%;
 
-#titleText {
-  color: white;
-  font-size: 3rem;
-  text-transform: uppercase;
-}
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+  }
 
-.firstLetter {
-  font-size: 4rem;
-}
+  a, a:visited, a:active, a:hover {
+    outline: none;
+    text-decoration: none;
+  }
 
-.slugText{
-  color: gray;
-  font-size: 2rem;
-  font-style: italic;
-  text-align: center;
-  margin: 0px 50px 0px 50px;
-}
+  .navBarButton {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    min-width: 200px;
 
-#headerInfo {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    text-decoration: none;
+    color: black;
+    font-family: "PT Sarif";
+    font-size: 2vh;
+    background: #6699CC;
 
-#headerLogo {
-  height: 200px;
-  margin-right: 100px;
-  text-align: center;
-}
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-#headerText {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  -ms-align-items: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
-}
+  #titleText {
+    color: white;
+    font-size: 4vw;
+    text-transform: uppercase;
+  }
 
-#headerText > * {
-  margin: 0;
-}
+  .firstLetter {
+    font-size: 5vw;
+  }
 
-#crest {
-  height: 80%;
-}
+  .slugText{
+    color: gray;
+    font-size: 3.5vw;
+    font-style: italic;
+    text-align: center;
+    margin: 0px 50px 0px 50px;
+  }
 
-#mainContent, #aboutContent {
-  height: 70%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  -ms-align-items: center;
-  align-items: center;
-  justify-content: center;
-}
+  #benPic {
+    width:100vw;
+  }
 
-#bioName {
-  font-family: "PT Serif";
-  font-size: 2rem;
-  text-align: center;
-}
+  #headerInfo {
+    width: 100%;
+    height: 80%;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-#aboutText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  #headerLogo {
+    height: 40vw;
+    max-height: 400px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
 
-.card1 {
-  width: 80%;
-  display: flex;
-  -ms-align-items: center;
-  align-items: center;
-}
+  #headerText {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
 
-.card2 {
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  #headerText > * {
+    margin: 0;
+  }
 
-.servicesCard1Img {
-  height: 300px;
-}
+  #crest {
+    width: 50vw;
+  }
 
-.servicesCard2Img {
-  height: 150px;
-  width: 150px;
-  border-radius: 75px;
-}
+  #contactCrest {
+    width: 50vw;
+  }
 
-#moreServices {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  #mainContent, #aboutContent, #contactContent {
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+
+
+  #mainContent > .slugText {
+    order: 2;
+  }
+
+  #bioName {
+    font-family: "PT Serif";
+    font-size: 4vw;
+    text-align: center;
+    margin-top:20px;
+  }
+
+  #aboutText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card1 {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+  .card1 > span {
+    margin-top:10px;
+  }
+
+  .card1:nth-child(odd) > span {
+    order: 2;
+  }
+
+  .card2 {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicesCard1Img {
+    height: 30vw;
+    max-height: 300px;
+  }
+
+  .servicesCard2Img {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 75px;
+  }
+
+  #moreServices {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
