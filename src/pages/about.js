@@ -18,7 +18,7 @@ const creds = [
   "Top Secret Security Clearance",
 ]
 
-const IndexPage = () => (
+const AboutPage = () => (
   <Layout>
     <SEO title="About" />
     <div id="aboutContent">
@@ -31,4 +31,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default AboutPage
