@@ -21,7 +21,7 @@ const AboutPage = () => (
   <Layout>
     <SEO title="About" />
     <div id="aboutContent">
-      <img src={benPic} id="benPic" style={{"marginTop":"20px", "height":"100%"}}></img>
+      <img src={benPic} id="benPic" style={{"marginTop":"20px", "height":"100%", "width":"auto"}}></img>
       <div id="aboutText">
         <span id="bioName">William B. O'Neal</span>
         {creds.map(cred => <><span className="slugText">{cred}</span><br/></>)}

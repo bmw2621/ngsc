@@ -47,7 +47,7 @@ const ServicesPage = () => (
     <SEO title="Services" />
     <div id="aboutText">
         <span id="bioName" style={{"margin-top":"50px", "margin-bottom":"50px"}}>Who We Are</span>
-        <span className="slugText">North Georgia Security Consultants specialize in conducting vulnerability assessments on residential and commercial properties in order to evaluate potential shortfalls in security postures and procedures. Initial assessments/site surveys are conducted resulting in detailed information back briefs to our clients.</span>
+        <span style={{"color":"black", "background":"#ddd","padding":"50px"}} className="slugText">North Georgia Security Consultants specialize in conducting vulnerability assessments on residential and commercial properties in order to evaluate potential shortfalls in security postures and procedures. Initial assessments/site surveys are conducted resulting in detailed information back briefs to our clients.</span>
         {card1Data.map(item => <ServiceCard1 side={item[0]} text={item[1]} imageUrl={item[2]}/>)}
         <span id="bioName" style={{"margin-top":"50px", "margin-bottom":"50px"}}>Planning, Training, Education</span>
         <div id="moreServices">

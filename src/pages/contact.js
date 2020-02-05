@@ -15,7 +15,7 @@ const ContactPage = () => (
         <span id="bioName">William B. O'Neal</span>
         <span className="slugText">(470) 577-1270</span>
         <span id="bioName" style={{"font-style":"italic"}}>Email</span>
-        <span className="slugText">wboneal@ngsconsultant.com </span>
+        <a href="mailto:wboneal@ngsconsultant.com" className="slugText">wboneal@ngsconsultant.com </a>
         <hr style={{
                 "color": "black",
                 "backgroundColor": "gray",

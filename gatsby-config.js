@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `North Georgia Security Consultants`,
-    description: `Website for North Georgia Security Consultants`,
+    description: `North Georgia Security Consultants specialize in conducting vulnerability assessments on residential and commercial properties in order to evaluate potential shortfalls in security postures and procedures. Initial assessments/site surveys are conducted resulting in detailed information back briefs to our clients.`,
     author: `@bmw2621`,
+    cardImage: `crest-c216a21823a8768e15fb8ab06df0b61d.svg`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

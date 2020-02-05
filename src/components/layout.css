@@ -29,7 +29,8 @@ html, body, #___gatsby, #gatsby-focus-wrapper, main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    background: linear-gradient(to right, #000, #000 60%, rgba(0,0,0,.5)), url("../images/chainlink.jpg") 500px 0px no-repeat;
+    background: linear-gradient(to right, #000, #000 60%, rgba(0,0,0,.5)), url("../images/chainlink.jpg") no-repeat;
+    background-position: right;
   }
 
   nav {
@@ -66,9 +67,14 @@ html, body, #___gatsby, #gatsby-focus-wrapper, main {
     justify-content: center;
   }
 
+  .navBarButton:hover {
+    background: #F2B81C;
+  }
+
   #titleText {
     color: white;
     font-size: 3vw;
+    max-font-size: 20px;
     text-transform: uppercase;
   }
 
@@ -135,6 +141,7 @@ html, body, #___gatsby, #gatsby-focus-wrapper, main {
   #aboutContent, #contactContent {
     margin-top:20px;
     align-items: center;
+    height: auto;
   }
 
   #bioName {
@@ -231,17 +238,19 @@ html, body, #___gatsby, #gatsby-focus-wrapper, main {
     width: 100%;
     padding: 10px;
     min-width: 200px;
-
     text-decoration: none;
     color: black;
     font-family: "PT Sarif";
     font-size: 2vh;
     background: #6699CC;
-
     border-bottom: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .navBarButton:hover {
+    background: #F2B81C;
   }
 
   #titleText {
@@ -264,6 +273,7 @@ html, body, #___gatsby, #gatsby-focus-wrapper, main {
 
   #benPic {
     width:100vw;
+    height: auto;
   }
 
   #headerInfo {
@@ -308,6 +318,7 @@ html, body, #___gatsby, #gatsby-focus-wrapper, main {
   #mainContent, #aboutContent, #contactContent {
 
     width: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
     display: flex;
@@ -358,7 +369,8 @@ html, body, #___gatsby, #gatsby-focus-wrapper, main {
   .card2 {
     width: 100%;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     flex-direction: column;
     align-items: center;
   }
